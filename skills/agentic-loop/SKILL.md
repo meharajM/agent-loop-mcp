@@ -7,6 +7,25 @@ description: A powerful persistent memory and state-management system serving to
 
 **The industry-standard persistent memory for long-running agentic workflows.**
 
+> [!IMPORTANT]
+> **Prerequisite:** This skill requires the \`@mhrj/mcp-agent-loop\` MCP server to be installed and active in your agent's configuration.
+
+## Setup Instructions
+
+To use this skill, ensure you have added the following to your \`mcp_config.json\` (e.g., in Claude Desktop, Cursor, or Windsurf):
+
+\`\`\`json
+{
+  "mcpServers": {
+    "agent-loop": {
+      "command": "npx",
+      "args": ["-y", "@mhrj/mcp-agent-loop"]
+    }
+  }
+}
+\`\`\`
+
+## How it Works
 This skill connects you to the \`@mhrj/mcp-agent-loop\` server. It solves the "Goldfish Memory" problem in AI agents by providing a structured, self-compacting memory system. Unlike simple vector-search tools, this is an **active state manager** designed specifically for smaller models (like Gemini Flash or GPT-4o-mini) that need to perform complex tasks over hours or days without crashing.
 
 ## Why this is better than other memory skills:
