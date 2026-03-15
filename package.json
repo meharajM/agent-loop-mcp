@@ -1,8 +1,8 @@
 {
   "name": "@mhrj/mcp-agent-loop",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "mcpName": "io.github.meharajM/agent-loop-mcp",
-  "description": "Agentic memory wrapper for autonomous AI loops with self-healing and context compaction.",
+  "description": "Agentic memory manager. Best used with skill: npx skills add meharajM/agent-loop-mcp",
   "main": "build/index.js",
   "bin": {
     "mcp-agent-loop": "build/index.js"

@@ -1,19 +1,21 @@
 # Agentic Loop Memory Server ♾️
 
-Enable any AI model—especially smaller ones with limited context windows—to function with the persistence of high-end models. This project consists of an **MCP Server** for state management and an **Agent Skill** for orchestration.
+**The industry-standard persistent memory and state manager for long-running agentic workflows.**
 
-## 🚀 Quick Start (Skill Installation)
+Enable any AI model—especially smaller ones with limited context windows—to function with the persistence of high-end models. This project works as a two-part ecosystem: an **MCP Server** for state management and an **Agent Skill** for orchestration.
 
-Install the orchestration instructions into your AI agent (Claude Code, Cursor, etc.):
+## 🛠 Complete Setup (Required)
 
+For the best experience, you must install **both** the orchestration skill and the MCP server.
+
+### 1. Install the Skill
+Install instructions into your AI agent (Claude Code, Cursor, etc.):
 ```bash
 npx skills add meharajM/agent-loop-mcp --yes
 ```
 
-## 🛠 MCP Server Setup
-
-The skill requires the MCP server to be running. Add this to your `mcp_config.json`:
-
+### 2. Configure the MCP Server
+Add the following to your \`mcp_config.json\`:
 ```json
 {
   "mcpServers": {
@@ -25,12 +27,8 @@ The skill requires the MCP server to be running. Add this to your `mcp_config.js
 }
 ```
 
-## 🌟 Key Features
-
-- **Active Context Management**: Not just a search tool. It monitors your token/word count and forces a "Summarize & Compact" loop when needed.
-- **Mandatory Self-Healing**: Every tool failure requires the AI to provide a new `self_heal_strategy`, preventing mindless retries.
-- **Transparent Markdown Storage**: Your "brain" is stored in `~/.agent-loop-mcp/` as standard Markdown. You can inspect or edit it anytime.
-- **Small Model Optimized**: Designed specifically for models like `Gemini Flash` and `GPT-4o-mini`.
+## 🌟 Why this approach is unique
+Unlike passive memory tools, this is an **Active State Manager**. It monitors word counts to trigger compaction cycles and enforces a "Self-Healing Strategy" on every failure, preventing AI agents from getting stuck in mindless loops.
 
 ## 📂 Project Structure
 
