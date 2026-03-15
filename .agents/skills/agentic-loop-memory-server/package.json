@@ -8,7 +8,7 @@
   },
   "files": [
     "build/",
-    "skills/agentic-loop/SKILL.md",
+    "SKILL.md",
     "skill.sh"
   ],
   "scripts": {

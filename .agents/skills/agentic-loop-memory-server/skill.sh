@@ -1,7 +1,7 @@
 #!/bin/bash
 # skill.sh - Helper to install the Agentic Loop Memory skill to local agent folders
 
-SKILL_NAME="skills/agentic-loop/SKILL.md"
+SKILL_NAME="SKILL.md"
 TARGET_DIR="$HOME/.agents/skills"
 
 if [ ! -f "$SKILL_NAME" ]; then
